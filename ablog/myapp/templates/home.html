@@ -1,0 +1,11 @@
+<h1>Post</h1>
+
+<!--here post is just a variable like "i"-->
+<ul>
+{% for post in object_list %}
+	<li>{{ post.title }} - {{ post.author.first_name }} {{post.author.last_name}} < {{ post.author.email }} ><br/>
+		<br>
+	{{ post.body }}</li>
+	<br><br>
+{%endfor%}
+</ul>

@@ -8,3 +8,6 @@ class HomeView(ListView):
 	#this we have created in the mdoels.py
 	model = Post
 	template_name='home.html'
+class ArticleDetailView(DetailView):
+	model =Post
+	template_name='articles_details.html'
